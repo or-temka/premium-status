@@ -1,0 +1,52 @@
+.benefits {
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 21px;
+  
+  &__cards {
+    margin-top: 57px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 380px;
+    border: 1px solid $dark-grey-text;
+    border-radius: 5px;
+    padding: 31px 23px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  &__img-container {
+    height: 66px;
+    width: 66px;
+    position: relative;
+  }
+
+  &__card-img {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__title {
+    margin-top: 28px;
+  }
+
+  &__about-text {
+    margin-top: 16px;
+  }
+
+  &__small-text {
+    margin-block: 0;
+    line-height: 20px;
+    
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+}

@@ -29,6 +29,16 @@ body {
 .plain-small-text_focus {
   color: white;
 }
+.plain-small-text_less {
+  font-size: 15px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
 
 .button {
   border-radius: 5px;
@@ -91,6 +101,13 @@ body {
   height: 25px;
   float: left;
   margin-right: 10px;
+  margin-top: 1px;
+}
+
+.section-title {
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 300;
 }
 
 .main {
@@ -144,7 +161,7 @@ body {
   width: 24px;
   background-color: #F8BE4D;
   margin-top: 11px;
-  margin-right: 10px;
+  margin-right: 9px;
 }
 .main__action-text {
   max-width: 385px;
@@ -190,7 +207,7 @@ body {
           box-sizing: border-box;
 }
 .call-send-form__input {
-  width: 89.14%;
+  width: 88.5%;
   margin-bottom: 18px;
 }
 .call-send-form__plain-text {
@@ -202,6 +219,62 @@ body {
   max-width: 278px;
   height: 60px;
   margin-top: 16px;
+}
+
+.benefits {
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 21px;
+}
+.benefits__cards {
+  margin-top: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.benefits__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 240px;
+  height: 380px;
+  border: 1px solid #1B242D;
+  border-radius: 5px;
+  padding: 31px 23px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+}
+.benefits__img-container {
+  height: 66px;
+  width: 66px;
+  position: relative;
+}
+.benefits__card-img {
+  position: absolute;
+  bottom: 0;
+}
+.benefits__title {
+  margin-top: 28px;
+}
+.benefits__about-text {
+  margin-top: 16px;
+}
+.benefits__small-text {
+  margin-block: 0;
+  line-height: 20px;
+}
+.benefits__small-text:not(:first-child) {
+  margin-top: 20px;
 }
 
 .container_header-main {
