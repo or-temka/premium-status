@@ -1,0 +1,24 @@
+.call-send-form {
+  width: 330px;
+  height: 279px;
+  border: 1px solid transparentize($color: #fff, $amount: 0.85);
+  border-radius: 5px;
+  padding: 36px 26px;
+  text-align: center;
+  box-sizing: border-box;
+
+  &__input {
+    width: 89.14%;
+    margin-bottom: 18px;
+  }
+  &__plain-text {
+    display: inline-block;
+    margin-bottom: 39px;
+  }
+  &__button {
+    width: 278px;
+    max-width: 278px;
+    height: 60px;
+    margin-top: 16px;
+  }
+}

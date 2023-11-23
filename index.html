@@ -4,45 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Статус Премиум</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <div class="container container_header">
-    <div class="wrapper">
-      <header class="header">
-        <nav class="nav">
-          <div class="logo">
+  <!-- Header and main -->
+  <div class="container container_header-main">
+    
+    <div class="header-main-container">
+      <div class="wrapper">
+        <header class="header">
+          <img src="source/svg/logo.svg" alt="Статус" class="logo">
+          <div class="header__phone-number">
+            <a href="tel:+74957852791" class="header__number">
+              +7 (495) <span class="header__number_bold">785-27-91</span>
+            </a>
           </div>
-          <div class="nav__phone-number">
-            <img src="" alt="Телефон" class="nav__phone-svg">
-            <div class="nav__number-container">
-              <a href="tel:+74957852791" class="nav__number">
-                +7 (495) <div class="nav__number_bold">785-27-91</div>
-              </a>
+        </header>
+      </div>
+      
+      <div class="wrapper">
+        <main class="main">
+          <div class="main__company-ads">
+            <h1 class="main__h1">СТАТУС Премиум</h1>
+            <h2 class="main__company-slogan">Премиальный формат обслуживания</h2>
+            <button class="button button_not-solid main__button">Стать премиальным клиентом</button>
+            <div class="main__action-text-container">
+              <p class="plain-small-text main__action-text">
+                Назовите промокод <span class="plain-small-text_focus">#PREMIUM</span><br> при обращении и получите <span class="plain-small-text_focus">скидку 15%</span>
+              </p>
+            </div>
+            <div class="main__action-text-container">
+              <p class="plain-small-text main__action-text">
+                <span class="plain-small-text_focus">БЕСПЛАТНАЯ</span> парковка для владельцев карт премиального обслуживания <span class="plain-small-text_focus">STATUS Premium</span>
+              </p>
             </div>
           </div>
-        </nav>
-
-        <section class="header__content">
-          <div class="header__company-ads">
-            <h1 class="header__h1">СТАТУС Премиум</h1>
-            <h2 class="header__company-slogan">Премиальный формат обслуживания</h2>
-            <button class="button button_not-solid">Стать премиальным клиентом</button>
-            <p class="plain-small-text">
-              Назовите промокод <span class="plain-small-text_focus">#PREMIUM</span> при обращении и получите <span class="plain-small-text_focus">скидку 15%</span>
-            </p>
-            <p class="plain-small-text">
-              <span class="plain-small-text_focus">БЕСПЛАТНАЯ</span> парковка для владельцев карт премиального обслуживания <span class="plain-small-text_focus">STATUS Premium</span>
-            </p>
-          </div>
           <form action="#" class="call-send-form" method="get">
-            <span class="plain-text">Перезвоним в течение 5 минут</span>
-            <input class="input" name="fio" type="text" placeholder="Ваши фамилия, имя, отчество*">
-            <input class="input" name="phone-number" type="number" placeholder="Ваш телефон*">
-            <button class="button button_solid" type="submit">Заказать звонок</button>
+            <span class="plain-text call-send-form__plain-text">Перезвоним в течение 5 минут</span>
+            <input class="input call-send-form__input" name="fio" type="text" placeholder="Ваши фамилия, имя, отчество*" required>
+            <input type="tel" class="input call-send-form__input" name="phone-number" placeholder="Ваш телефон*" required>
+            <button class="button button_solid call-send-form__button" type="submit">Заказать звонок</button>
           </form>
-        </section>
-      </header>
+        </main>
+      </div>
+    </div>
+    
     </div>
   </div>
   <!-- Benefits -->
@@ -179,7 +185,7 @@
             </div>
           </div>
           <div class="become-client__enter-form">
-            <span class="become-client__gift-title">Вы получаете</span>
+            <h4 class="become-client__gift-title">Вы получаете</h4>
             <p class="become-client__gift-text">Приоритетное обслуживание, быстрые экспертные решения</p>
             <form action="#" class="call-send-form" method="get">
               <span class="plain-text">Стать премиальным клиентом</span>
@@ -192,20 +198,23 @@
       </section>
     </div>
   </div>
+  <!-- Footer -->
   <div class="container">
     <div class="wrapper">
-      <nav class="nav">
-        <div class="logo logo_grey">
-        </div>
-        <div class="nav__phone-number">
-          <img src="" alt="Телефон" class="nav__phone-svg nav__phone-svg_grey">
-          <div class="nav__number-container">
-            <a href="tel:+74957852791" class="nav__number nav__number_grey">
-              +7 (495) <div class="nav__number_bold">785-27-91</div>
-            </a>
+      <footer class="footer">
+        <nav class="nav">
+          <div class="logo logo_grey">
           </div>
-        </div>
-      </nav>
+          <div class="nav__phone-number">
+            <img src="" alt="Телефон" class="nav__phone-svg nav__phone-svg_grey">
+            <div class="nav__number-container">
+              <a href="tel:+74957852791" class="nav__number nav__number_grey">
+                +7 (495) <div class="nav__number_bold">785-27-91</div>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </footer>
     </div>
   </div>
 </body>

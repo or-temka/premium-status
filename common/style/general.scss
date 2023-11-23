@@ -1,0 +1,59 @@
+* {
+  color: #fff;
+  font-family: "Lato";
+}
+
+body {
+  background-color: $main-color;
+}
+
+.wrapper {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.plain-text {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.plain-small-text {
+  font-size: 16px;
+  font-weight: 24px;
+  line-height: 24px;
+  color: $light-grey-text;
+
+  &_focus {
+    color: white;
+  }
+}
+
+.button {
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  transition: 0.2s;
+
+  &_solid {
+    background-color: $orange;
+    color: $main-color;
+    &:hover {
+      background-color: $main-color;
+      color: #fff;
+    }
+  }
+  &_not-solid {
+    border: 1px solid $orange;
+    background: none;
+    &:hover {
+      background-color: $orange;
+    }
+  }
+}
+
+@import 'blocks/header';

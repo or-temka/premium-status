@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 77px;
+
+  &__phone-number {
+    display: flex;
+    align-items: center;
+  }
+  &__number {
+    display: inline;
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 22px;
+    &_bold {
+      font-weight: 700;
+    }
+    &::before {
+      content: url(/source/svg/phone.svg);
+      display: block;
+      width: 15px;
+      height: 25px;
+      float: left;
+      margin-right: 10px;
+    }
+  }
+}

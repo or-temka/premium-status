@@ -1,0 +1,57 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 152px;
+  margin-left: 2px; 
+  margin-bottom: 37px;
+
+  &__h1 {
+    font-weight: bold;
+    font-size: 64px;
+    margin-top: 52px;
+    line-height: 103px;
+    margin-bottom: 23px;
+    &::after {
+      content: ".";
+      color: $orange;
+    }
+  }
+
+  &__company-slogan {
+    font-weight: 300;
+    line-height: 46px;
+    font-size: 38px;
+    max-width: 599px;
+    height: 92px;
+    margin-top: 0px;
+  }
+
+  &__button {
+    max-width: 290px;
+    height: 60px;
+    margin-top: 24px;
+    margin-bottom: 30px;
+  }
+
+  &__action-text-container {
+    display: flex;
+    &:last-child {
+      margin-top: 16px;
+    }
+  
+    &::before {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 24px;
+      background-color: $orange;
+      margin-top: 11px;
+      margin-right: 10px;
+    }
+  }
+
+  &__action-text {
+    max-width: 385px;
+    margin-block: 0px;
+  }
+}
