@@ -20,6 +20,21 @@
     padding: 31px 23px;
     box-sizing: border-box;
     text-align: left;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $orange;
+
+      & .title {
+        color: $main_color;
+      }
+      & .plain-small-text {
+        color: $main_color;
+      }
+      & .benefits__card-img {
+        fill: $main_color;
+      }
+    }
   }
 
   &__img-container {

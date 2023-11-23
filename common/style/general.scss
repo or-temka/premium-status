@@ -12,6 +12,10 @@ body {
   margin: 0 auto;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .plain-text {
   font-size: 18px;
   font-weight: bold;
@@ -63,6 +67,7 @@ body {
     background: none;
     &:hover {
       background-color: $orange;
+      color: $main-color;
     }
   }
 }

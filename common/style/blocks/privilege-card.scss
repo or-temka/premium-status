@@ -1,0 +1,98 @@
+.privilege-card {
+  background: linear-gradient(130deg, #3a5853, #273B38, #162D2B 240px);
+  border-radius: 24px;
+  background-size: 250%;
+  background-position: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 25px;
+  box-sizing: border-box;
+  transition: 0.4s;
+  position: relative;
+
+  &:hover {
+    background-position: 0%;
+    &::after {
+      top: -20px;
+    }
+    &::before {
+      top: -10px;
+    }
+  }
+
+  &__img-container {
+    margin-top: 13.2%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    max-width: 51px;
+    margin: 0 auto;
+  }
+
+  &__img-company-name {
+    font-size: 35px;
+    letter-spacing: 3.5px;
+    margin-top: 13px;
+    line-height: 30px;
+  }
+
+  &__img-hr {
+    margin: 0 auto;
+    width: 140px;
+  }
+
+  &__img-desc {
+    font-size: 6px;
+    letter-spacing: 1px;
+    margin-top: 4px;
+  }
+
+  &__text-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card-number {
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+  }
+
+  &__card-name {
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    margin-right: 3px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 87%;
+    height: 100px;
+    background-color: #2A2F35;
+    border-radius: 10px;
+    top: -20px;
+    align-self: center;
+    transition: 0.4s;
+    z-index: -1;
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 75%;
+    height: 100px;
+    background-color: #2A2F35;
+    opacity: 0.7;
+    border-radius: 10px;
+    top: -40px;
+    align-self: center;
+    transition: 0.4s;
+    z-index: -1;
+  }
+  
+}

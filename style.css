@@ -14,6 +14,10 @@ body {
   margin: 0 auto;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .plain-text {
   font-size: 18px;
   font-weight: bold;
@@ -65,6 +69,7 @@ body {
 }
 .button_not-solid:hover {
   background-color: #F8BE4D;
+  color: #121920;
 }
 
 .header {
@@ -253,6 +258,19 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: left;
+  cursor: pointer;
+}
+.benefits__card:hover {
+  background-color: #F8BE4D;
+}
+.benefits__card:hover .title {
+  color: #121920;
+}
+.benefits__card:hover .plain-small-text {
+  color: #121920;
+}
+.benefits__card:hover .benefits__card-img {
+  fill: #121920;
 }
 .benefits__img-container {
   height: 66px;
@@ -277,6 +295,227 @@ body {
   margin-top: 20px;
 }
 
+.privilege-card {
+  background: linear-gradient(130deg, #3a5853, #273B38, #162D2B 240px);
+  border-radius: 24px;
+  background-size: 250%;
+  background-position: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: relative;
+}
+.privilege-card:hover {
+  background-position: 0%;
+}
+.privilege-card:hover::after {
+  top: -20px;
+}
+.privilege-card:hover::before {
+  top: -10px;
+}
+.privilege-card__img-container {
+  margin-top: 13.2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.privilege-card__logo {
+  max-width: 51px;
+  margin: 0 auto;
+}
+.privilege-card__img-company-name {
+  font-size: 35px;
+  letter-spacing: 3.5px;
+  margin-top: 13px;
+  line-height: 30px;
+}
+.privilege-card__img-hr {
+  margin: 0 auto;
+  width: 140px;
+}
+.privilege-card__img-desc {
+  font-size: 6px;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+.privilege-card__text-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.privilege-card__card-number {
+  font-size: 21px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+}
+.privilege-card__card-name {
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  margin-right: 3px;
+}
+.privilege-card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 87%;
+  height: 100px;
+  background-color: #2A2F35;
+  border-radius: 10px;
+  top: -20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: -1;
+}
+.privilege-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 75%;
+  height: 100px;
+  background-color: #2A2F35;
+  opacity: 0.7;
+  border-radius: 10px;
+  top: -40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: -1;
+}
+
+.simple-input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #3A434C;
+  background-repeat: no-repeat;
+  padding: 15px 34px;
+  background-position: center left;
+  font-size: 15px;
+  outline: none;
+}
+.simple-input::-webkit-input-placeholder {
+  color: #88939E;
+}
+.simple-input::-moz-placeholder {
+  color: #88939E;
+}
+.simple-input:-ms-input-placeholder {
+  color: #88939E;
+}
+.simple-input::-ms-input-placeholder {
+  color: #88939E;
+}
+.simple-input::placeholder {
+  color: #88939E;
+}
+.simple-input:hover, .simple-input:focus {
+  border-bottom: 1px solid #5d6c7b;
+}
+
+.privileges {
+  text-align: center;
+  padding-top: 71px;
+  margin-bottom: 82px;
+}
+.privileges__privelege-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.privileges__card-wrapper {
+  position: relative;
+}
+.privileges__container-free-parking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 105px;
+  margin-right: 42px;
+}
+.privileges__card {
+  width: 420px;
+  height: 278px;
+  margin-right: 30px;
+}
+.privileges__card-info {
+  text-align: left;
+  margin-top: 51px;
+}
+.privileges__free-parking-title {
+  font-size: 30px;
+  color: #F8BE4D;
+  letter-spacing: 0.3px;
+}
+.privileges__free-parking-about-text {
+  font-size: 24px;
+  max-width: 377px;
+  margin-top: 44px;
+  line-height: 34px;
+}
+.privileges__meeting-title {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 300;
+  margin-top: 90px;
+}
+.privileges__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 870px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.privileges__simple-input {
+  width: 100%;
+  max-width: 210px;
+}
+.privileges__simple-input_fio {
+  background-image: url("/source/svg/profile.svg");
+}
+.privileges__simple-input_tel {
+  background-image: url("/source/svg/telephone.svg");
+}
+.privileges__form-send-btn {
+  max-width: 274px;
+}
+
 .container_header-main {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 25, 32, 0.95)), to(rgba(18, 25, 32, 0))), -webkit-gradient(linear, left bottom, left top, from(#121920), to(rgba(18, 25, 32, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(18, 25, 32, 0.7921568627))), url(/source/img/header-bg.png);
   background-image: linear-gradient(rgba(18, 25, 32, 0.95), rgba(18, 25, 32, 0)), linear-gradient(0deg, #121920, rgba(18, 25, 32, 0)), linear-gradient(rgba(18, 25, 32, 0.7921568627)), url(/source/img/header-bg.png);
@@ -292,6 +531,21 @@ body {
 }
 .container > .wrapper {
   position: relative;
+}
+.container_with-lines {
+  position: relative;
+}
+.container_with-lines::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("/source/img/BG.png");
+  background-repeat: no-repeat;
+  background-size: 1390px;
+  background-position: center 25px;
+  z-index: -3;
+  position: absolute;
 }
 
 .header-main-container {
