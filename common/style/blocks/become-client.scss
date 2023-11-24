@@ -112,4 +112,10 @@
   &__form {
     margin-top: 20px;
   }
+
+  &__form-button {
+    &:hover {
+      border: 1px solid $orange;
+    }
+  }
 }
