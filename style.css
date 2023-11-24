@@ -643,6 +643,117 @@ body {
   margin-bottom: 30px;
 }
 
+.become-client {
+  padding-top: 40px;
+  text-align: center;
+}
+.become-client__steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 83px;
+}
+.become-client__step {
+  text-align: left;
+  width: 331px;
+}
+.become-client__step-number {
+  display: block;
+  font-size: 100px;
+  color: #232A32;
+  font-weight: 900;
+}
+.become-client__step-number::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 2px;
+  background-color: #F8BE4D;
+  margin-top: 7px;
+}
+.become-client__step-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+.become-client__step-img {
+  max-width: 60px;
+  max-height: 60px;
+}
+.become-client__step-text {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 245px;
+}
+.become-client__become {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 90px;
+  margin-top: 108px;
+  text-align: left;
+}
+.become-client__action-photo {
+  max-width: 330px;
+}
+.become-client__action-text {
+  max-width: 330px;
+  margin-top: 47px;
+}
+.become-client__gift-title {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+.become-client__gift-text-container {
+  position: relative;
+  height: 72px;
+  margin-top: 20px;
+}
+.become-client__gift-text-container::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 44px;
+  background-color: #F8BE4D;
+  float: left;
+  margin-top: 6px;
+}
+.become-client__gift-text {
+  font-size: 18px;
+  font-weight: 300;
+  position: absolute;
+  margin: 0;
+  margin-left: 21px;
+  width: 400px;
+  letter-spacing: 0.2px;
+  line-height: 30px;
+}
+.become-client__form {
+  margin-top: 20px;
+}
+
 .container_header-main {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 25, 32, 0.95)), to(rgba(18, 25, 32, 0))), -webkit-gradient(linear, left bottom, left top, from(#121920), to(rgba(18, 25, 32, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(18, 25, 32, 0.7921568627))), url(/source/img/header-bg.png);
   background-image: linear-gradient(rgba(18, 25, 32, 0.95), rgba(18, 25, 32, 0)), linear-gradient(0deg, #121920, rgba(18, 25, 32, 0)), linear-gradient(rgba(18, 25, 32, 0.7921568627)), url(/source/img/header-bg.png);

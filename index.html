@@ -296,47 +296,46 @@
         <section class="become-client__steps">
           <div class="become-client__step">
             <span class="become-client__step-number">01</span>
-            <hr>
             <div class="become-client__step-info">
-              <img src="" alt="Шаг 1" class="become-client__step-img">
+              <img src="source/svg/paper.svg" alt="Шаг 1" class="become-client__step-img">
               <p class="become-client__step-text">Закажите звонок или заполните заявку</p>
             </div>
           </div>
           <div class="become-client__step">
             <span class="become-client__step-number">02</span>
-            <hr>
             <div class="become-client__step-info">
-              <img src="" alt="Шаг 2" class="become-client__step-img">
-              <p class="become-client__step-text">Мы перезвоним Вам в течение 5 минут</p>
+              <img src="source/svg/phones.svg" alt="Шаг 2" class="become-client__step-img">
+              <p class="become-client__step-text">Мы перезвоним Вам<br> в течение 5 минут</p>
             </div>
           </div>
           <div class="become-client__step">
             <span class="become-client__step-number">03</span>
-            <hr>
             <div class="become-client__step-info">
-              <img src="" alt="Шаг 3" class="become-client__step-img">
+              <img src="source/svg/manager.svg" alt="Шаг 3" class="become-client__step-img">
               <p class="become-client__step-text">Персональный менеджер предложит набор услуг согласно Вашим задачам</p>
             </div>
           </div>
         </section>
         <section class="become-client__become">
           <div class="become-client__action">
-            <img src="" alt="Акция" class="become-client__action-photo">
+            <img src="source/img/action-man.png" alt="Акция" class="become-client__action-photo">
             <div class="become-client__action-text">
               <p class="plain-small-text">
-                Назовите промокод <span class="plain-small-text_focus">#PREMIUM</span>
+                Назовите промокод <span class="plain-small-text_focus">#PREMIUM</span><br>
                 при обращении и получите <span class="plain-small-text_focus">скидку 15%</span>
               </p>
             </div>
           </div>
           <div class="become-client__enter-form">
             <h4 class="become-client__gift-title">Вы получаете</h4>
-            <p class="become-client__gift-text">Приоритетное обслуживание, быстрые экспертные решения</p>
-            <form action="#" class="call-send-form" method="get">
-              <span class="plain-text">Стать премиальным клиентом</span>
-              <input class="input" name="fio" type="text" placeholder="Ваши фамилия, имя, отчество*">
-              <input class="input" name="phone-number" type="number" placeholder="Ваш телефон*">
-              <button class="button button_solid" type="submit">Заказать звонок</button>
+            <div class="become-client__gift-text-container">
+              <p class="become-client__gift-text">Приоритетное обслуживание, быстрые экспертные решения</p>
+            </div>
+            <form action="#" class="call-send-form become-client__form" method="get">
+              <span class="plain-text call-send-form__plain-text">Стать премиальным клиентом </span>
+              <input class="input call-send-form__input" name="fio" type="text" placeholder="Ваши фамилия, имя, отчество*" required>
+              <input type="tel" class="input call-send-form__input" name="phone-number" placeholder="Ваш телефон*" required>
+              <button class="button button_solid call-send-form__button" type="submit">Стать клиентом</button>
             </form>
           </div>
         </section>

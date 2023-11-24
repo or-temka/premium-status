@@ -1,0 +1,115 @@
+.become-client {
+  padding-top: 40px;
+  text-align: center;
+
+  &__steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 83px;
+  }
+
+  &__step {
+    text-align: left;
+    width: 331px;
+
+  }
+
+  &__step-number {
+    display: block;
+    font-size: 100px;
+    color: $grey-text;
+    font-weight: 900;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 36px;
+      height: 2px;
+      background-color: $orange;
+      margin-top: 7px;
+    }
+
+  }
+
+  &__step-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  &__step-img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  &__step-text {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 245px;
+  }
+
+  // second section -- become
+
+  &__become {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 90px;
+    margin-top: 108px;
+    text-align: left;
+  }
+
+  &__action-photo {
+    max-width: 330px;
+  }
+
+  &__action-text {
+    max-width: 330px;
+    margin-top: 47px;
+  }
+
+  &__enter-form {
+
+  }
+
+  &__gift-title {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.2px;
+  }
+
+  &__gift-text-container {
+    position: relative;
+    height: 72px;
+    margin-top: 20px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 44px;
+      background-color: $orange;
+      float: left;
+      margin-top: 6px;
+    }
+  }
+
+  &__gift-text {
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    margin: 0;
+    margin-left: 21px;
+    width: 400px;
+    letter-spacing: 0.2px;
+    line-height: 30px;
+  }
+
+  &__form {
+    margin-top: 20px;
+  }
+}
