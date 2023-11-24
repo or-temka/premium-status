@@ -7,6 +7,7 @@
 @import 'blocks/priveleges';
 @import 'blocks/support-team';
 @import 'blocks/become-client';
+@import 'blocks/footer';
 
 .container {
   &_header-main {
@@ -42,6 +43,10 @@
       z-index: -3;
       position: absolute;
     }
+  }
+
+  &_footer {
+    background-color: #0D141B;
   }
 }
 

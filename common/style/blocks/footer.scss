@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 138px;
+
+  margin-top: 83px;
+  
+  &__logo {
+    opacity: 0.35;
+    width: 100%;
+    max-width: 238px;
+  }
+
+  &__number {
+    margin-top: 2px;
+    color: #61666B;
+
+    &::before {
+      content: url('/source/svg/phone-grey.svg')
+    }
+
+    &_bold {
+      color: #61666B;
+    }
+  }
+  
+}

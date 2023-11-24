@@ -92,7 +92,7 @@ body {
 .header__number {
   display: inline;
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 200;
   text-decoration: none;
   margin-right: 22px;
 }
@@ -754,6 +754,36 @@ body {
   margin-top: 20px;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 138px;
+  margin-top: 83px;
+}
+.footer__logo {
+  opacity: 0.35;
+  width: 100%;
+  max-width: 238px;
+}
+.footer__number {
+  margin-top: 2px;
+  color: #61666B;
+}
+.footer__number::before {
+  content: url("/source/svg/phone-grey.svg");
+}
+.footer__number_bold {
+  color: #61666B;
+}
+
 .container_header-main {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 25, 32, 0.95)), to(rgba(18, 25, 32, 0))), -webkit-gradient(linear, left bottom, left top, from(#121920), to(rgba(18, 25, 32, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(18, 25, 32, 0.7921568627))), url(/source/img/header-bg.png);
   background-image: linear-gradient(rgba(18, 25, 32, 0.95), rgba(18, 25, 32, 0)), linear-gradient(0deg, #121920, rgba(18, 25, 32, 0)), linear-gradient(rgba(18, 25, 32, 0.7921568627)), url(/source/img/header-bg.png);
@@ -784,6 +814,9 @@ body {
   background-position: center 25px;
   z-index: -3;
   position: absolute;
+}
+.container_footer {
+  background-color: #0D141B;
 }
 
 .header-main-container {
