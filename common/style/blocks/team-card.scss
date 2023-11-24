@@ -1,0 +1,97 @@
+.team-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 240px;
+  height: 400px;
+  max-height: 400px;
+  background-color: white;
+  padding: 13px;
+  padding-top: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  
+  
+  &__person-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  &__img-box {
+    width: 212px;
+    height: 208px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__photo {
+    position: absolute;
+    float: center;
+    left:50%;
+    transform:translate(-50%);
+    object-fit:cover;
+    max-width: 210px;
+  }
+
+  &__person-name {
+    color: $dark-grey-text;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-top: 16px;
+  }
+
+  &__person-position {
+    color: $light-grey-text;
+    font-size: 13px;
+    line-height: 16px;
+    width: 196px;
+    margin: 0 auto;
+    margin-top: 16px;
+  }
+
+  &__communicate-data {
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+
+    & ::before {
+      content: '';
+      background-repeat: no-repeat;
+      background-size: 18px;
+      position: absolute;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin-left: -29px;
+    }
+
+    & > a {
+      position: relative;
+      margin-left: 39px;
+      display: block;
+    }
+
+  }
+
+  &__number {
+    color: $main-color;
+    margin-bottom: 13px;
+
+    &::before {
+      background-image: url(/source/svg/telephone.svg);
+    }
+  }
+
+  &__email {
+    color: $main-color;
+    margin-bottom: 12px;
+
+    &::before {
+      background-image: url(/source/svg/email.svg);
+    }
+  }
+}

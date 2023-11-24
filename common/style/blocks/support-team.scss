@@ -1,0 +1,19 @@
+@import 'team-card';
+
+.support-team {
+  text-align: center;
+  padding-top: 46px;
+  padding-bottom: 29px;
+
+  &__team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 61px;
+  }
+
+  &__team-card {
+    margin-bottom: 30px;
+  }
+}

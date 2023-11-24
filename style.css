@@ -316,6 +316,8 @@ body {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   position: relative;
+  -webkit-box-shadow: 0px 25px 15px 0px rgb(11, 16, 21);
+          box-shadow: 0px 25px 15px 0px rgb(11, 16, 21);
 }
 .privilege-card:hover {
   background-position: 0%;
@@ -514,6 +516,131 @@ body {
 }
 .privileges__form-send-btn {
   max-width: 274px;
+}
+
+.team-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 240px;
+  height: 400px;
+  max-height: 400px;
+  background-color: white;
+  padding: 13px;
+  padding-top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+.team-card__person-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+.team-card__img-box {
+  width: 212px;
+  height: 208px;
+  position: relative;
+  overflow: hidden;
+}
+.team-card__photo {
+  position: absolute;
+  float: center;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 210px;
+}
+.team-card__person-name {
+  color: #1B242D;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+.team-card__person-position {
+  color: #88939E;
+  font-size: 13px;
+  line-height: 16px;
+  width: 196px;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.team-card__communicate-data {
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+}
+.team-card__communicate-data ::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 18px;
+  position: absolute;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-left: -29px;
+}
+.team-card__communicate-data > a {
+  position: relative;
+  margin-left: 39px;
+  display: block;
+}
+.team-card__number {
+  color: #121920;
+  margin-bottom: 13px;
+}
+.team-card__number::before {
+  background-image: url(/source/svg/telephone.svg);
+}
+.team-card__email {
+  color: #121920;
+  margin-bottom: 12px;
+}
+.team-card__email::before {
+  background-image: url(/source/svg/email.svg);
+}
+
+.support-team {
+  text-align: center;
+  padding-top: 46px;
+  padding-bottom: 29px;
+}
+.support-team__team-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 61px;
+}
+.support-team__team-card {
+  margin-bottom: 30px;
 }
 
 .container_header-main {
