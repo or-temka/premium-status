@@ -36,6 +36,13 @@
     max-width: 210px;
   }
 
+  &__about-person {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 179px;
+  }
+
   &__person-name {
     color: $dark-grey-text;
     font-size: 18px;
@@ -50,13 +57,13 @@
     line-height: 16px;
     width: 196px;
     margin: 0 auto;
-    margin-top: 16px;
   }
 
   &__communicate-data {
     font-size: 13px;
     line-height: 20px;
     text-align: left;
+    margin-top: 9px;
 
     & ::before {
       content: '';
@@ -73,6 +80,14 @@
       position: relative;
       margin-left: 39px;
       display: block;
+    }
+
+    &_three-lines {
+      margin-top: -6px;
+    }
+
+    &_one-lines {
+      margin-top: 25px;
     }
 
   }

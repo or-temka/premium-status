@@ -22,3 +22,28 @@
     margin-top: 16px;
   }
 }
+
+@include tablets {
+  .call-send-form {
+    &__button {
+      border: 1px solid $orange;
+    }
+  }
+}
+
+@include phone-small {
+  .call-send-form {
+
+    height: 300px;
+
+    width: 100%;
+
+    &__input {
+      width: 75%;
+    }
+
+    &__button {
+      width: 100%;
+    }
+  }
+}

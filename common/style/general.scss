@@ -12,8 +12,20 @@ body {
   margin: 0 auto;
 }
 
+@include desktop {
+  .wrapper {
+    padding: 0 40px;
+  }
+}
+
 .logo {
   cursor: pointer;
+}
+
+@include phone {
+  .logo {
+    width: 90%;
+  }
 }
 
 .plain-text {
@@ -78,4 +90,15 @@ body {
   font-size: 38px;
   line-height: 46px;
   font-weight: 300;
+  margin-block-end: 0;
+}
+
+@include phone-small {
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+.hidden {
+  display: none;
 }

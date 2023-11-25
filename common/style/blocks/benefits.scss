@@ -65,3 +65,102 @@
     }
   }
 }
+
+@include desktop {
+  .benefits {
+    &__cards {
+      justify-content: space-around;
+      row-gap: 30px;
+    }
+
+    &__card {
+      flex-direction: row;
+      width: 45%;
+      height: auto;
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+
+    &__img-container {
+      width: 90px;
+    }
+
+    &__title {
+      margin: 0;
+      width: auto;
+    }
+
+    &__about-text {
+      margin-top: 30px;
+    }
+  }
+}
+
+@include laptops {
+  .benefits {
+    &__title {
+      max-width: 60%;
+    }
+  }
+}
+
+@include tablets {
+  .benefits {
+
+    &__card {
+      width: 100%;
+    }
+
+    &__card-img {
+      max-width: 50px;
+      max-height: 50px;
+      top: 0;
+    }
+
+    &__about-text {
+      margin: 0;
+      width: 100%;
+    }
+
+    &__small-text {
+      margin-left: 90px;
+    }
+
+    &__title, &__small-text {
+      &_with-br {
+        display: none;
+      }
+
+      &_without-br {
+        display: block;
+      }
+    }
+    
+  }
+}
+
+@include phone {
+  .benefits {
+
+    &__cards {
+      row-gap: 10px;
+    }
+
+    &__small-text {
+      margin: 0;
+      margin-top: 10px;
+    }
+
+  }
+}
+
+@include phone-small {
+  .benefits {
+
+    padding-top: 100px;
+
+    &__cards {
+      margin-top: 15px;
+    }
+  }
+}

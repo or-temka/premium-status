@@ -15,3 +15,9 @@
     border-bottom: 1px solid #5d6c7b;
   }
 }
+
+@include laptops {
+  .simple-input {
+    font-size: 16px;
+  }
+}

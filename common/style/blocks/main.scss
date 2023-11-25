@@ -55,3 +55,55 @@
     margin-block: 0px;
   }
 }
+
+@include laptops {
+  .main {
+
+    &__company-ads {
+      max-width: 50%;
+    }
+
+    &__h1 {
+      line-height: 65px;
+    }
+    
+  }
+}
+
+@include tablets {
+  .main {
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+
+    &__company-ads {
+      max-width: 100%;
+      margin-left: 10px;
+    }
+
+    &__action-text {
+      font-size: 18px;
+    }
+  }
+}
+
+@include phone-small {
+  .main {
+    margin-top: 20px;
+
+    &__h1 {
+      font-size: 40px;
+      line-height: initial;
+    }
+
+    &__company-slogan {
+      font-size: 24px;
+      line-height: initial;
+      margin-bottom: 100px;
+    }
+
+    &__action-text {
+      font-size: 16px;
+    }
+  }
+}

@@ -71,10 +71,6 @@
     margin-top: 47px;
   }
 
-  &__enter-form {
-
-  }
-
   &__gift-title {
     font-size: 38px;
     font-weight: 700;
@@ -117,5 +113,190 @@
     &:hover {
       border: 1px solid $orange;
     }
+  }
+}
+
+@include laptops {
+  .become-client {
+
+    &__steps {
+      flex-direction: column;
+      row-gap: 15px;
+      width: 520px;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+
+    &__step {
+      display: flex;
+      flex-direction: row;
+      column-gap: 50px;
+    }
+
+    &__step-number {
+      &::after {
+        width: 2px;
+        height: 70px;
+        float: right;
+        margin-top: -98px;
+        margin-left: 130px;
+      }
+    }
+
+    &__step-info {
+      margin-top: 23px;
+      justify-content: space-between;
+      column-gap: 20px;
+    }
+
+    &__action {
+      max-width: 35%;
+    }
+
+    &__action-photo {
+      width: 100%;
+    }
+
+  }
+}
+
+@include laptops-small {
+  .become-client {
+
+
+
+    &__become {
+      flex-direction: column;
+      row-gap: 70px;
+      margin-top: 40px;
+    }
+
+    &__action {
+      display: flex;
+      flex-direction: row;
+      column-gap: 30px;
+      align-items: center;
+      max-width: 100%;
+    }
+
+    &__action-photo {
+      width: auto;
+      max-height: 250px;
+    }
+
+    &__action-text {
+      margin: 0;
+      width: auto
+    }
+
+    &__enter-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__gift-text-container {
+      width: 350px;
+    }
+
+  }
+}
+
+@include tablets {
+  .become-client {
+
+    &__steps {
+      width: 100%;
+    }
+
+    &__step {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &__step-number {
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__step-text {
+      width: auto;
+    }
+
+    &__become {
+      width: 100%;
+      padding: 0;
+    }
+
+    &__action {
+      width: 100%;
+      max-width: 100%;
+    }
+
+  }
+}
+
+@include phone {
+  .become-client {
+
+    &__steps {
+      row-gap: 50px;
+    }
+
+    &__step {
+      flex-direction: column;
+    }
+
+    &__step-info {
+      justify-content: flex-start;
+      margin: 0;
+    }
+
+    &__action {
+      flex-direction: column;
+    }
+
+    &__gift-text-container {
+      text-align: center;
+      &::before {
+        display: none;
+      }
+    }
+
+    &__gift-text {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      margin-left: 0;
+    }
+
+  }
+}
+
+@include phone-small {
+  .become-client {
+
+    &__steps {
+      margin-top: 30px;
+    }
+
+    &__step-text {
+      font-size: 16px;
+    }
+
+    &__gift-title {
+      font-size: 24px;
+    }
+
+    &__gift-text-container {
+      width: 90%;
+    }
+
+    &__form {
+      margin-top: 100px;
+    }
+
   }
 }

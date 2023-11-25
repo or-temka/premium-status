@@ -14,3 +14,9 @@
     color: $light-grey-text;
   }
 }
+
+@include laptops {
+  .input {
+    font-size: 16px;
+  }
+}

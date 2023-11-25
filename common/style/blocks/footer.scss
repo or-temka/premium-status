@@ -53,3 +53,11 @@
   }
   
 }
+
+@include phone {
+  .footer {
+    &__logo {
+      width: 80%;
+    }
+  }
+}

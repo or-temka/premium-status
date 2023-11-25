@@ -21,6 +21,8 @@
     &_bold {
       font-weight: 700;
     }
+
+
     &::before {
       content: url(/source/svg/phone.svg);
       display: block;
@@ -34,6 +36,37 @@
     &:hover {
       text-decoration: underline 1px $orange;
       text-underline-offset: 5px;
+    }
+
+    &_easy {
+      display: none;
+      margin: 0;
+      &::before {
+        margin: 0;
+        transform: scale(1.8);
+      }
+    }
+  }
+}
+
+@include tablets {
+  .header {
+    &__number {
+      display: none;
+
+      &_easy {
+        display: inline;
+      }
+    }
+  }
+}
+
+@include phone {
+  .header {
+    &__number {
+      &::before {
+        transform: scale(1.3);
+      }
     }
   }
 }

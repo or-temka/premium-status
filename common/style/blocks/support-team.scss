@@ -15,5 +15,161 @@
 
   &__team-card {
     margin-bottom: 30px;
+    height: auto;
+  }
+}
+
+@include desktop {
+  .support-team {
+
+    &__team-cards {
+      justify-content: space-evenly;
+      column-gap: 10px
+    }
+
+    &__team-card {
+      max-width: 100%;
+      width: auto;
+      padding-left: 0;
+    }
+
+    &__team-card-person-info {
+      flex-direction: row;
+      justify-content: flex-start;
+      text-align: left;
+    }
+
+    &__about-person {
+      width: 230px;
+    }
+
+    &__person-name {
+      margin-left: 10px;
+    }
+
+    &__person-position {
+      margin-left: 10px;
+    }
+  }
+}
+
+@include laptops {
+  .support-team {
+
+    &__team-card {
+      padding: 10px;
+      max-height: 500px;
+    }
+
+    &__img-box {
+      margin: 0 auto;
+    }
+
+    &__team-card-person-info {
+      text-align: center;
+      flex-direction: column;
+    }
+
+    &__about-person {
+      height: auto;
+      justify-content: space-between;
+    }
+
+    &__person-name {
+      font-size: 20px;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+
+    &__person-position {
+      font-size: 15px;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+
+    &__communicate-data {
+      font-size: 15px;
+      margin: 0 auto;
+      margin-top: 15px;
+    }
+
+  }
+}
+
+@include laptops-small {
+  .support-team {
+
+    &__team-cards {
+      justify-content: center;
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+
+    &__team-card {
+      width: 40%;
+      margin: 0;
+    }
+
+    &__about-person {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    &__person-position {
+      width: 100%;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+@include tablets {
+  .support-team {
+
+    &__team-cards {
+
+    }
+
+    &__team-card {
+      width: 45%;
+    }
+
+    &__img-box {
+      width: 100%;
+    }
+
+  }
+}
+
+@include phone {
+  .support-team {
+
+    &__team-card {
+      width: 100%;
+    }
+
+    &__team-card-person-info {
+      flex-direction: row;
+    }
+
+    &__img-box {
+      border-radius: 5px;
+      width: 50%;
+    }
+
+  }
+}
+
+@include phone-small {
+  .support-team {
+
+    &__team-card-person-info {
+      flex-direction: column;
+    }
+
+    &__img-box {
+      width: 100%;
+    }
+    
   }
 }
