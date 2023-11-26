@@ -5,8 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Статус Премиум</title>
   <link rel="stylesheet" href="style.css">
+  <script src="common/scripts/main.js"></script>
 </head>
 <body>
+
+  <div class="pop-up">
+    <div class="pop-up__container">
+      <div class="pop-up__msg-block">
+        <div class="pop-up__msg-text"></div>
+        <button class="button button_solid pop-up__close-btn" onclick="main.closePopUp()">Ок</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Header and main -->
   <div class="container container_header-main">
     
@@ -40,11 +51,11 @@
               </p>
             </div>
           </div>
-          <form action="#" class="call-send-form" method="get">
+          <form action="" class="call-send-form" method="get">
             <span class="plain-text call-send-form__plain-text">Перезвоним в течение 5 минут</span>
-            <input class="input call-send-form__input" name="fio" type="text" placeholder="Ваши фамилия, имя, отчество*" required>
-            <input type="tel" class="input call-send-form__input" name="phone-number" placeholder="Ваш телефон*" required>
-            <button class="button button_solid call-send-form__button" type="submit">Заказать звонок</button>
+            <input class="input call-send-form__input" name="fio" type="text" placeholder="Ваши фамилия, имя, отчество*" oninput="main.changedFio(this)">
+            <input type="tel" class="input call-send-form__input" name="phone-number" placeholder="Ваш телефон*" oninput="main.changedNumber(this)">
+            <button class="button button_solid call-send-form__button" type="button" onclick="main.clickBtnSendFormBad()">Заказать звонок</button>
           </form>
         </main>
       </div>
@@ -350,11 +361,11 @@
             <div class="become-client__gift-text-container">
               <p class="become-client__gift-text">Приоритетное обслуживание, быстрые экспертные решения</p>
             </div>
-            <form action="#" class="call-send-form become-client__form" method="get">
+            <form action="" class="call-send-form become-client__form" method="get">
               <span class="plain-text call-send-form__plain-text">Стать премиальным клиентом </span>
-              <input class="input call-send-form__input" name="fio" type="text" placeholder="Ваши фамилия, имя, отчество*" required>
-              <input type="tel" class="input call-send-form__input" name="phone-number" placeholder="Ваш телефон*" required>
-              <button class="button button_solid call-send-form__button become-client__form-button" type="submit">Стать клиентом</button>
+              <input class="input call-send-form__input" name="fio" type="text" placeholder="Ваши фамилия, имя, отчество*" oninput="main.changedFio(this)">
+              <input type="tel" class="input call-send-form__input" name="phone-number" placeholder="Ваш телефон*" oninput="main.changedNumber(this)">
+              <button class="button button_solid call-send-form__button become-client__form-button" type="button" onclick="main.clickBtnSendFormTrue()">Стать клиентом</button>
             </form>
           </div>
         </section>

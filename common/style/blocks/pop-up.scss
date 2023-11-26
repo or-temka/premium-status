@@ -1,0 +1,47 @@
+.pop-up {
+
+  display: none;
+
+  position: relative;
+
+  &__container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: transparentize($main-color, 0.2);
+    z-index: 5;
+    backdrop-filter: blur(5px);
+  }
+
+  &__msg-block {
+    margin: 40vh auto;
+    width: 20%;
+    min-width: 180px;
+    background-color: $main-color;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid $light-grey;
+  }
+
+  &__msg-text {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  &__close-btn {
+    height: 50px;
+    width: 20%;
+    position: absolute;
+    min-width: 180px;
+
+    &:hover {
+      border: 1px solid $orange;
+    }
+
+    &:active {
+      border: 1px solid $light-grey-text;
+    }
+  }
+
+}

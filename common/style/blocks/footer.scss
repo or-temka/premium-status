@@ -31,7 +31,7 @@
     transition: color 0.1s;
 
     &::before {
-      content: url('/source/svg/phone-grey.svg');
+      content: url('source/svg/phone-grey.svg');
       transition: color 0.1s;
     }
 
@@ -43,7 +43,7 @@
     &:hover {
       color: #fff;
       &::before {
-        content: url('/source/svg/phone.svg')
+        content: url('source/svg/phone.svg')
       }
     }
 

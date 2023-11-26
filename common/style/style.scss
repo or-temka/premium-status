@@ -1,5 +1,6 @@
 @import 'imports';
 
+@import 'blocks/pop-up';
 @import 'blocks/main';
 @import 'blocks/input';
 @import 'blocks/call-send-form';
@@ -15,7 +16,7 @@
     background-image: linear-gradient(transparentize(#121920, 0.05), #12192000),
       linear-gradient(0deg, #121920, #12192000),
       linear-gradient(#121920ca),
-      url(/source/img/header-bg.png);
+      url(source/img/header-bg.png);
     background-position: center top, center bottom, center;
     background-size: 100% 184px, 100% 184px, cover, cover;
     background-repeat: no-repeat;
